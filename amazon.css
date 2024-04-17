@@ -153,6 +153,8 @@ justify-content: space-around;
   display: flex;
   align-items: center;
   justify-content:space-around;
+  position: relative;
+
   
   
 }
@@ -178,9 +180,13 @@ justify-content: space-around;
   display: flex;
   align-items: center;
   list-style: none;
-  gap: 60px;
+  flex-wrap: wrap;
+  gap: 20px;
   flex-grow: 1;
   margin-left: 15px;
+  position: relative;
+  
+
 }
 
 .links a {
@@ -188,6 +194,8 @@ justify-content: space-around;
   text-decoration: none;
   text-decoration-color: #fff;
   flex-wrap: wrap;
+  
+
 }
 
 .foot-pannel {
@@ -195,12 +203,17 @@ justify-content: space-around;
   color: white;
   height: 350px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  position: relative;
+  
+
 }
 
 ul p {
   margin-top: 25px;
   font-weight: bold;
+  
+
 }
 
 ul a {
@@ -208,6 +221,8 @@ ul a {
   font-size: 14px;
   margin-top: 15px;
   color: #dddddd;
+  
+
 }
 
 .foot-pannel2 {
@@ -216,8 +231,8 @@ ul a {
   height: 70px;
   display: flex;
   justify-content: center;
-  /* align-items: center;
-  position: absolute; */
+  
+  
 }
 .footer-items {
   background-color: #222f3d;
@@ -226,6 +241,8 @@ ul a {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+
   
 }
 
@@ -235,7 +252,7 @@ ul a {
   height: 50px;
   margin-bottom:0px;
   width: 100px;
-  position: relative;
+ 
 }
 
 .foot-pannel3 {
@@ -245,6 +262,10 @@ ul a {
   text-align: center;
   font-size: 0.7rem;
   position: relative;
+  flex-wrap: wrap-reverse;
+  flex-direction: column;
+  
+  
 }
 
 .pages {
@@ -262,7 +283,8 @@ ul a {
   color: #fff;
   font-size: 0.875rem;
   font-weight: 600;
- 
+  
+  
 
 }
 .shop-section {
@@ -299,12 +321,14 @@ font-size: 5px;
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
  float: left;
-  margin-left: 50px;
+  margin-left: 0.5px;
   text-decoration: none;
   bottom: 180px;
+  position: relative;
+
 }
 .card img{
-  height: 170px;
+  height: 100px;
   width: auto;
   
 }
@@ -318,4 +342,25 @@ font-size: 5px;
 .card1 img{
   height:176px;
   width: 232px;
+}
+@media screen and (max-width: 720px) {
+  .navbar {
+    display:none
+  }
+}
+@media screen and (max-width: 750px) {
+  .foot-pannel {
+    display:none
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .card{
+    display:none
+  }
+}
+@media screen and (max-width: 720px) {
+  .link{
+    display:none
+  }
 }
